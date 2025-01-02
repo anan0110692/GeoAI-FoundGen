@@ -44,11 +44,11 @@ Once the folder is created, all data files should be put  in:
 * **Download Datafiles Folder**
 
 
-The datafiles folder  can be downloaded from the following link: [Google Drive Link](https://drive.google.com/drive/folders/1A1yYsHM48_Om39orlCQQQAw030ZuMb0w?usp=sharing).
+The datafiles folder  can be downloaded from the following link: [Google Drive Link](https://drive.google.com/drive/folders/1JHUJHgNb8Sa23XLkAWHsIS7z838eYfRI?usp=sharing).
 
 The datasets included are:
 
-- **Flair Dataset** (refer to [1])
+- **Flair Dataset** (refer to [Link](https://ignf.github.io/FLAIR/))
 - **C2Sseg-AB Dataset** (refer to [Link](https://github.com/danfenghong))
 
 
@@ -72,7 +72,6 @@ The notebooks should be executed in the order listed above to ensure proper work
    In the third cell (*interface cell* ), assign a value to `Exp_name`. By default, logs and snapshots will be stored in the following directory structure:   
 
 ```bash
-<root_dir>/Results/<Dataset file>/DA/Exp_<Exp_name>
 <root_dir>/Results/<Dataset file>/Exp_<Exp_name>
 <root_dir>/Results/<Dataset file>/Source/Exp_<Exp_name>
 <root_dir>/Results/<Dataset file>/lightning_logs/Exp_<Exp_name>
@@ -104,4 +103,7 @@ The notebooks should be executed in the order listed above to ensure proper work
 ### Pre-trained parameters
 Pre-trained parameters can be downloaded from [this Google Drive link](https://drive.google.com/drive/folders/1bVt_3WdXlyMq80Y9cF7XoustsMOKj949?usp=sharing). Each dataset includes one `.pkl` file contains a list of model parameters , with a length equal to the number of runs (10).
 
+## Acknowledgements
+
+This code utilizes and modifies the pre-trained foundation model provided by [NASA-IMPACT](https://github.com/NASA-IMPACT/hls-foundation-os).
 
