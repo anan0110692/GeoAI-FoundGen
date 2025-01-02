@@ -101,7 +101,7 @@ The notebooks should be executed in the order listed above to ensure proper work
 3. Run the desired evaluation cell.
 
 ### Pre-trained parameters
-Pre-trained parameters can be downloaded from [this Google Drive link](https://drive.google.com/drive/folders/1bVt_3WdXlyMq80Y9cF7XoustsMOKj949?usp=sharing). Each dataset includes one `.pkl` file contains a list of model parameters , with a length equal to the number of runs (10).
+Pre-trained parameters can be downloaded from [this Google Drive link]. Each dataset includes one `.pkl` file contains a list of model parameters , with a length equal to the number of runs (10).
 
 ## Acknowledgements
 
