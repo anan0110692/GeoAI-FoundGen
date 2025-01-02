@@ -30,7 +30,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 3. Download Prithvi's checkpoint
-   Please download ``Prithvi_100M.pt`` from [Link](https://github.com/NASA-IMPACT/hls-foundation-os)
+
+   Download the `Prithvi_100M.pt` file from [this link](https://github.com/NASA-IMPACT/hls-foundation-os) and place it in the `<root_dict>/prithvi` directory.
 ### Datasets
 
 Ensure the `Datafiles` folder exists. If it does not, create it using the following command (Linux):
