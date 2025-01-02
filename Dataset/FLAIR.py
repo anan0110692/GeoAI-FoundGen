@@ -202,7 +202,15 @@ def mapping_mask(mask,All_classes=None):
 
 # %%
 Dataset_name='FLAIR'
-
+H_p_S=0
+H_l_S=1000
+W_p_S=0
+W_l_S=1000
+##################
+H_p_T=1000
+H_l_T=1000
+W_p_T=1000
+W_l_T=1000
 
 def select_well_represented_common_classes(split=True):
     Source_Path=os.path.join(os.path.dirname(os.path.abspath(__file__)),'Datafiles','FLAIR','S3 all zone pathces.pickle')
