@@ -210,7 +210,8 @@ def select_well_represented_common_classes(split=True):
     Source_Path=os.path.join(os.path.dirname(os.path.abspath(__file__)),'Datafiles','C2Seg_AB','berlin_multimodal.mat')
     Source_data = sio.loadmat(Source_Path)
     Source_cube=Source_data['HSI']
-    Source_cube = ( Source_cube.astype(np.float32))
+    Source_cube = ( Source_cube.astype(np.float32))   
+    
 
    
 
