@@ -188,12 +188,7 @@ from scipy import signal
 from sklearn.metrics import jaccard_score, f1_score, precision_score, recall_score, confusion_matrix, accuracy_score, cohen_kappa_score,balanced_accuracy_score
 
 
-# %%
-# source_dataset_seed=41
-# source_dataset_seed_list=[41,50,61]
-# target_dataset_seed=41
-# target_dataset_seed_list=[41,50,61]
-# models_initilization_seed=100
+
 
 # %%
 
