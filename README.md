@@ -101,7 +101,7 @@ The notebooks should be executed in the order listed above to ensure proper work
 3. Run the desired evaluation cell.
 
 ### Pre-trained parameters
-Pre-trained parameters can be downloaded from [C2Seg-AV](https://sharedby.blomp.com/gri25h), [FLAIR](https://sharedby.blomp.com/rKtw6x). Each dataset includes one `.pkl` file contains a list of model parameters , with a length equal to the number of runs (10). To start the download please, enter the following email address github.gatafiles@gmail.com
+Pre-trained parameters can be downloaded from [C2Seg-AV](https://sharedby.blomp.com/gri25h), [FLAIR](https://sharedby.blomp.com/rKtw6x). Each dataset includes one `.pkl` file contains a list of pre-trained models  , with a length equal to the number of runs (10). To start the download please, enter the following email address github.gatafiles@gmail.com
 
 ## Acknowledgements
 
