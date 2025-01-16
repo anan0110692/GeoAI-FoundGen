@@ -400,12 +400,10 @@ def Target_data_genrator(batch_size=1, num_workers=16,Num_of_Samples=None):
         # class_train_idx=class_indices
        
             if i==8 or i==12 or i==13   :
-                class_train_idx, class_test_idx, _, _ = train_test_split(class_indices, np.zeros((class_indices.shape[0],)), train_size=Num_of_Samples, random_state=42)
+                class_train_idx, class_test_idx, _, _ = train_test_split(class_indices, np.zeros((class_indices.shape[0],)), train_size=.7, random_state=42)
             
             
-            elif i !=2 and i!=3:
-                
-                class_train_idx,  class_test_idx, _, _ = train_test_split(class_indices, np.zeros((class_indices.shape[0],)), train_size=Num_of_Samples, random_state=42)
+            
             else:
                 class_train_idx,  class_test_idx, _, _ = train_test_split(class_indices, np.zeros((class_indices.shape[0],)), train_size=Num_of_Samples, random_state=42)
         # class_train_idx=  class_indices 

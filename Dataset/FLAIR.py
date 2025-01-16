@@ -416,7 +416,7 @@ def Target_data_genrator(batch_size=1, num_workers=16,Num_of_Samples=None):
         # selected_class_indices_idx= [ All_test_labels_idx_dict.get(tuple(row))==None for i,row in enumerate(class_indices)]
         # selected_Val_class_indices_idx= [  All_Val_test_labels_idx_dict.get(tuple(row))==None for i,row in enumerate(class_indices)]
         # class_indices=class_indices[selected_Val_class_indices_idx]
-        # if Num_of_Samples is not None:
+        if Num_of_Samples is not None:
            
         #    class_indices= train_test_split(class_indices, np.zeros((class_indices.shape[0],)), train_size= Num_of_Samples, random_state=42)[0]
 
@@ -425,15 +425,20 @@ def Target_data_genrator(batch_size=1, num_workers=16,Num_of_Samples=None):
         # class_train_unlabeled_idx=class_indices
         # class_train_idx=class_indices
        
-        if i==4 or i==11:
-           class_train_idx, class_test_idx, _, _ = train_test_split(class_indices, np.zeros((class_indices.shape[0],)), train_size=100, random_state=42)
-        else:
-            
-            class_train_idx, class_test_idx, _, _ = train_test_split(class_indices, np.zeros((class_indices.shape[0],)), train_size=600, random_state=42)
+            if i==4 or i==11:
+                class_train_idx, class_test_idx, _, _ = train_test_split(class_indices, np.zeros((class_indices.shape[0],)), train_size=100, random_state=42)
+            else:
+                
+                class_train_idx, class_test_idx, _, _ = train_test_split(class_indices, np.zeros((class_indices.shape[0],)), train_size=Num_of_Samples, random_state=42)
        
         # class_train_idx=  class_indices 
 
-        
+        else:
+            if i==4 or i==11:
+                class_train_idx, class_test_idx, _, _ = train_test_split(class_indices, np.zeros((class_indices.shape[0],)), train_size=100, random_state=42)
+            else:
+                
+                class_train_idx, class_test_idx, _, _ = train_test_split(class_indices, np.zeros((class_indices.shape[0],)), train_size=600 , random_state=42)
         class_test_idx,class_val_labeled_idx,_,_= train_test_split(class_test_idx, np.zeros(
             (class_test_idx.shape[0],)), train_size=.5, random_state=42)
         
