@@ -96,12 +96,14 @@ The notebooks should be executed in the order listed above to ensure proper work
 ```bash
 <root_dir>/Results/FLAIR/dummy_DA/FLAIR_lists.pkl
 ```
-   
- 
+
 3. Run the desired evaluation cell.
 
+*4. Optionally, you can experiment with our pre-trained models as described in the 4th section in the notebook.*
+
+
 ### Pre-trained parameters
-Pre-trained parameters can be downloaded from [C2Seg-AV](https://sharedby.blomp.com/gri25h), [FLAIR](https://sharedby.blomp.com/rKtw6x). Each dataset includes one `.pkl` file contains a list of pre-trained models  , with a length equal to the number of runs (10). To start the download please, enter the following email address github.gatafiles@gmail.com
+Pre-trained parameters can be downloaded from [Hugging Face](https://huggingface.co/anan1966752/GeoAI-FoundGen_models_pt). 
 
 ## Acknowledgements
 
